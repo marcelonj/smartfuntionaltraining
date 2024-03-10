@@ -6,3 +6,33 @@
 	--azul-principal: #1F3951ff;
 	--azul-secundario: #7689A1ff;
 }
+
+/* Header */
+nav {
+	background-color: var(--azul-secundario);
+}
+
+a h1 {
+	font-size: 1.5rem;
+	margin: 0 0.5rem;
+}
+
+nav div {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+li {
+	padding: 0 0.5rem;
+}
+
+.nav-link {
+	color: var(--azul-principal) !important;
+	font-size: 1.25rem !important;
+	transition: all 0.5s !important;
+}
+
+.nav-link:hover {
+	color: var(--salmon-claro) !important;
+	font-weight: 600 !important;
+}
