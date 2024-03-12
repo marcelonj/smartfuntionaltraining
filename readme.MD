@@ -2,7 +2,9 @@
 Página web dedicada a dar a conocer los profesionales y servicios de **Smart Funtional Training**
 ## Recursos
 - ### Paleta de colores:
-``` --blanco: #f2eded;
+
+```css
+--blanco: #f2eded;
 
 --crudo: #FAFEFCff;
 
@@ -16,9 +18,11 @@ Página web dedicada a dar a conocer los profesionales y servicios de **Smart Fu
 
 --celeste: #7f9caf;
 
---gris: #979692; ```
+--gris: #979692;
+```
 
 - ### Fuentes:
+
     "Roboto"
 
     "Roboto Condensed"
