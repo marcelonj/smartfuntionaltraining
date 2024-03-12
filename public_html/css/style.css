@@ -1,10 +1,17 @@
 :root{
-    --blanco: #ffffff;
+    --blanco: #f2eded;
 	--crudo: #FAFEFCff;
 	--salmon-claro: #E66468ff;
-	--salmon: #FD3131ff;
-	--azul-principal: #1F3951ff;
-	--azul-secundario: #7689A1ff;
+	--salmon: #f03838;
+	--azul-principal: #2b3450;
+	--azul-secundario: #8094b0;
+	--celeste: #7f9caf;
+	--gris: #979692;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
 }
 
 /* Header */
@@ -15,6 +22,8 @@ nav {
 a h1 {
 	font-size: 1.5rem;
 	margin: 0 0.5rem;
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
 }
 
 nav div {
@@ -30,9 +39,103 @@ li {
 	color: var(--azul-principal) !important;
 	font-size: 1.25rem !important;
 	transition: all 0.5s !important;
+	font-family: "Roboto", sans-serif !important;
 }
 
 .nav-link:hover {
 	color: var(--salmon-claro) !important;
-	font-weight: 600 !important;
+	/* font-weight: 600 !important; */
+}
+
+/* Main */
+.banner {
+	height: 90vh;
+	background-image: url("../assets/images/flexiones-horizontal.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.banner p {
+	padding: 5rem;
+	font-size: 2.5rem;
+	color: var(--crudo);
+	text-align: center;
+	z-index: 1;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+.oscurecer {
+	position: absolute;
+	height: 90vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.589);
+	z-index: 0;
+}
+
+/* Profesores */
+section {
+	min-height: 100vh;
+	background-color: var(--blanco);
+	font-family: "Roboto", sans-serif;
+}
+
+article img {
+	height: 20rem;
+	border-radius: 50%;
+}
+
+.row h2 {
+	display: inline-block;
+	padding-bottom: 0.2rem;
+	border-bottom: 0.3rem solid var(--azul-principal)
+}
+
+.subtexto {
+	color: var(--gris);
+}
+
+/* Boton whatsapp */
+.whatsapp {
+	position: fixed;
+	height: 4rem;
+	bottom: 2rem;
+	right: 2rem;
+}
+
+.whatsapp img {
+	height: 100%;
+}
+
+@media (width < 768px) {
+	/* Main */
+	.banner {
+		background-image: url("../assets/images/pesa-vertical-oscuro.jpg");
+		height: 60vh;
+	}
+
+	.oscurecer {
+		height: 60vh;
+	}
+
+	.banner p {
+		padding: 2rem;
+		font-size: 1.5rem;
+	}
+
+	/* Profesores */
+	article img {
+		height: 60%;
+	}
+	
+
+	/* Boton whatsapp */
+	.whatsapp {
+		bottom: 1rem;
+		right: 1rem;
+	}
 }

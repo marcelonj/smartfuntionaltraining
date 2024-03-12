@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-</head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
 <body>
         <!-- Header -->
         <header>
@@ -18,7 +28,7 @@
                     <div>
                         <a class="navbar-brand d-flex align-items-center" href="#">
                             <img src="./assets/images/smartfuntionaltraining-logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-                            <h1>Smart Funtional Training</h1>
+                            <h1 class="d-none d-md-block">Smart Funtional Training</h1>
                           </a>
                     </div>
                     <div class="pt-2">
@@ -31,7 +41,7 @@
                               <a class="nav-link" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Nuestro equipo</a>
+                              <a class="nav-link" href="#profesores">Nuestro equipo</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">Planes</a>
@@ -45,6 +55,41 @@
                 </div>
               </nav>
         </header>
+
+        <!-- Main -->
+        <main>
+            <div class="banner">
+                <div class="oscurecer"></div>
+                <p>"Siempre puedes encontrar tiempo para el ejercicio si haces de tu salud una prioridad"</p>
+            </div>
+        </main>
+
+        <!-- Profesores -->
+        <section id="profesores" class="container-fluid p-5">
+          <div class="row text-center">
+            <div class="col-12 mb-5">
+              <h2>Nuestro equipo</h2>
+            </div>
+            <article class="col-12 col-md-6">
+              <h3>Agustín Argañaraz</h3>
+              <img src="./assets/images/perfil-agustin.jpg" alt="foto profesor Agustin" class="py-3">
+              <h4 class="mt-2">Técnico en Educación Fisica</h4>
+              <p class="subtexto">Univesidad Católica de Salta</p>
+            </article>
+            <article class="col-12 col-md-6">
+              <h3>Franco Escamilla</h3>
+              <img src="./assets/images/perfil-agustin.jpg" alt="foto profesor Franco" class="py-2">
+              <h4 class="mt-2">Técnico en Educación Fisica</h4>
+              <p class="subtexto">Univesidad Católica de Salta</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Boton whatsapp -->
+        <div class="whatsapp">
+          <a href="https://api.whatsapp.com/send/?phone=543876120155&text=Hola%2C+entr%C3%A9+a+su+sitio+web+y+me+interesa+tener+mas+detalle+de+sus+servicios&type=phone_number&app_absent=0" target="_blank"><img src="./assets/images/whatsapp.png" alt="icono whatsapp"></a>
+          
+        </div>
 <!-- Javascript -->
 <script src="./scripts/script.js"></script>
 <script src="./scripts/bootstrap.bundle.min.js"></script>
