@@ -14,13 +14,25 @@ body {
 	scroll-behavior: smooth;
 }
 
+/* Clases generales */
+.bg-blanco {
+	background-color: var(--blanco);
+}
+
+.bg-oscuro {
+	background-color: var(--azul-principal);
+	color: var(--crudo);
+}
+
 /* Header */
-nav {
-	background-color: var(--azul-secundario);
+a img {
+	border: 0.15rem solid var(--crudo);
+	border-radius: 50%;
 }
 
 a h1 {
 	font-size: 1.5rem;
+	color: var(--crudo);
 	margin: 0 0.5rem;
 	font-family: "Kanit", sans-serif;
 	font-weight: 400;
@@ -36,7 +48,7 @@ li {
 }
 
 .nav-link {
-	color: var(--azul-principal) !important;
+	color: var(--crudo) !important;
 	font-size: 1.25rem !important;
 	transition: all 0.5s !important;
 	font-family: "Roboto", sans-serif !important;
@@ -80,7 +92,6 @@ li {
 /* Profesores */
 section {
 	min-height: 100vh;
-	background-color: var(--blanco);
 	font-family: "Roboto", sans-serif;
 }
 
@@ -88,7 +99,6 @@ article img {
 	height: 20rem;
 	border-radius: 50%;
 }
-
 .row h2 {
 	display: inline-block;
 	padding-bottom: 0.2rem;
@@ -98,6 +108,9 @@ article img {
 .subtexto {
 	color: var(--gris);
 }
+
+/* Planes */
+
 
 /* Boton whatsapp */
 .whatsapp {
@@ -109,6 +122,7 @@ article img {
 
 .whatsapp img {
 	height: 100%;
+	border: none;
 }
 
 @media (width < 768px) {
@@ -129,13 +143,13 @@ article img {
 
 	/* Profesores */
 	article img {
-		height: 60%;
+		height: 20%;
 	}
 	
 
 	/* Boton whatsapp */
 	.whatsapp {
 		bottom: 1rem;
-		right: 1rem;
+		right: 2rem;
 	}
 }

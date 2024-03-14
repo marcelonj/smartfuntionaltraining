@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Funtional Training</title>
-    <!-- Links -->
-    <link rel="shortcut icon" href="./assets/images/smartfuntionaltraining-logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- Google Fonts -->
@@ -19,11 +16,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Links -->
+    <link rel="shortcut icon" href="./assets/images/smartfuntionaltraining-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 <body>
         <!-- Header -->
         <header>
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg bg-oscuro">
                 <div class="container-fluid d-flex justify-content-between align-items-start">
                     <div>
                         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -44,7 +44,7 @@
                               <a class="nav-link" href="#profesores">Nuestro equipo</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Planes</a>
+                              <a class="nav-link" href="#planes">Planes</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">Contacto</a>
@@ -60,28 +60,81 @@
         <main>
             <div class="banner">
                 <div class="oscurecer"></div>
-                <p>"Siempre puedes encontrar tiempo para el ejercicio si haces de tu salud una prioridad"</p>
+                <p>“Smart Functional Training: Flexibilidad y excelencia en entrenamiento a distancia, adaptado a tu ritmo y estilo de vida.”</p>
             </div>
         </main>
 
         <!-- Profesores -->
-        <section id="profesores" class="container-fluid p-5">
+        <section id="profesores" class="container-fluid p-5 bg-blanco">
           <div class="row text-center">
             <div class="col-12 mb-5">
               <h2>Nuestro equipo</h2>
             </div>
             <article class="col-12 col-md-6">
               <h3>Agustín Argañaraz</h3>
-              <img src="./assets/images/perfil-agustin.jpg" alt="foto profesor Agustin" class="py-3">
-              <h4 class="mt-2">Técnico en Educación Fisica</h4>
+              <img src="./assets/images/agustin-perfil.jpeg" alt="foto profesor Agustin" class="py-3" id="agustin-perfil">
+              <h4 class="mt-2 fs-5">Tecnico Universitario en Actividad Fisica y Fitness</h4>
               <p class="subtexto">Univesidad Católica de Salta</p>
+
+              <!-- Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Conóceme
+              </button>
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Más sobre mí...</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Mi nombre es Agustin Argañaraz, co-fundador de Smart Functional Training (SFT). Mi carrera como entrenador inicio indirectamente desde mis 15 años cuando concurria a un gimnasio con unos amigos y el entrenador a cargo no nos ayudaba, algo en mi decia que habia algo mas alla que ser un poco dedicado entrenador. Desde entonces eh empezado a ver a la actividad fisica como algo mas, como un medio hacia el bienestar tanto fisico como mental. Me gradue de Tecnico Universitario en Actividad Fisica y Fitness en el año 2021, ademas me gradue y trabajo de Coach ontologico y deportivo. Disfruto mucho el ayudar a mis alumnos a alcanzar un nivel fisico y de bienestar que antes no tenian. Me caracterizo por ser carismatico, atento y exigente con mis alumnos. Siempre se puede estar un poco mejor o un poco peor, depende de ti hacia que lado ir.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </article>
             <article class="col-12 col-md-6">
-              <h3>Franco Escamilla</h3>
-              <img src="./assets/images/perfil-agustin.jpg" alt="foto profesor Franco" class="py-2">
-              <h4 class="mt-2">Técnico en Educación Fisica</h4>
+              <h3>Franco Acosta</h3>
+              <img src="./assets/images/franco-perfil.jpeg" alt="foto profesor Franco" class="py-2">
+              <h4 class="mt-2 fs-5">Tecnico Universitario en Actividad Fisica y Fitness</h4>
               <p class="subtexto">Univesidad Católica de Salta</p>
+              <!-- Modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Conóceme
+              </button>
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Más sobre mí...</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Saludos, mi nombre es Franco Acosta y soy Co-Fundador de Smart Functional Training (SFT), así como un dedicado entrenador. Me gradué como Técnico en Actividad Física y Fitness en la UCASAL, donde cultivé mi pasión por el bienestar y el movimiento. Disfruto especialmente de las actividades grupales al aire libre, donde puedo combinar mi amor por el ejercicio con la belleza de la naturaleza. Mi carrera ha estado marcada por mi compromiso con la diversidad de clientes, desde adultos mayores hasta aquellos con necesidades especiales de salud. Actualmente, me encuentro inmerso en un proceso de crecimiento continuo: estoy finalizando mi Tesis para obtener mi licenciatura en Educación Física y persiguiendo una diplomatura en Obesidad y Coaching Ontológico. Mi objetivo es seguir evolucionando para ofrecer las mejores soluciones de bienestar a mis clientes.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </article>
+          </div>
+        </section>
+
+        <!-- Planes -->
+        <section id="planes" class="conteiner-fluid bg-oscuro">
+          <div class="row text-center">
+            <div class="col-12 m-5">
+              <h2>Planes</h2>
+            </div>
           </div>
         </section>
 
