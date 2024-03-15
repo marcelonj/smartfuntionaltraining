@@ -89,6 +89,10 @@ li {
 	z-index: 0;
 }
 
+.frases {
+	transition: opacity 1s ease;
+}
+
 /* Profesores */
 section {
 	min-height: 100vh;
@@ -110,7 +114,11 @@ article img {
 }
 
 /* Planes */
-
+#planes .row h2 {
+	display: inline-block;
+	padding-bottom: 0.2rem;
+	border-bottom: 0.3rem solid var(--blanco)
+}
 
 /* Boton whatsapp */
 .whatsapp {
@@ -143,7 +151,7 @@ article img {
 
 	/* Profesores */
 	article img {
-		height: 10rem;
+		height: 20rem;
 
 	}
 	
