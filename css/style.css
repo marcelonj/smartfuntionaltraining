@@ -121,6 +121,34 @@ article img {
 	border-bottom: 0.3rem solid var(--blanco)
 }
 
+#no-disponible {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #f038385b;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 2rem;
+	color: rgba(0, 0, 0, 0.692);
+}
+
+#no-disponible p {
+		
+	-webkit-transform: rotate(45deg); 
+	-moz-transform: rotate(45deg);
+}
+
+.card img{
+	height: 12rem;
+}
+
+.card-text {
+	height: 8rem;
+}
+
 /* Boton whatsapp */
 .whatsapp {
 	position: fixed;
