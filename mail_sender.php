@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\Exception;
 include "./correo.php";
 
 /* Carga de variables de entorno */
-$dotenv = Dotenv\Dotenv::createImmutable('./');
+$dotenv = Dotenv\Dotenv::createImmutable('../');
 $dotenv->load();
 
 /* Variables */
@@ -71,8 +71,8 @@ function enviar_mail($mailProtocol, $mailHost, $mailPort, $mailUsername, $mailPa
   return $mail;
 };
 
-$mail = enviar_mail($_ENV["MAIL_PROTOCOL"], $_ENV["MAIL_HOST"], $_ENV["MAIL_PORT"], $_ENV["MAIL_USERNAME"], $_ENV["MAIL_PASSWORD"], $mail_remitente, $nombre, $mensaje, "Gracias por ponerte en contaco");
-$mail2= enviar_mail($_ENV["MAIL_PROTOCOL"], $_ENV["MAIL_HOST"], $_ENV["MAIL_PORT"], $_ENV["MAIL_USERNAME"], $_ENV["MAIL_PASSWORD"], $_ENV["MAIL_USERNAME"], "landing page", $mensajeDatos, "Contacto desde landing page");
+$mail = enviar_mail($_ENV["MAIL_PROTOCOL_2"], $_ENV["MAIL_HOST_2"], $_ENV["MAIL_PORT_2"], $_ENV["MAIL_USERNAME_2"], $_ENV["MAIL_PASSWORD_2"], $mail_remitente, $nombre, $mensaje, "Gracias por ponerte en contaco");
+$mail2= enviar_mail($_ENV["MAIL_PROTOCOL_2"], $_ENV["MAIL_HOST_2"], $_ENV["MAIL_PORT_2"], $_ENV["MAIL_USERNAME_2"], $_ENV["MAIL_PASSWORD_2"], $_ENV["MAIL_USERNAME_2"], "landing page", $mensajeDatos, "Contacto desde landing page");
 
 if(!$mail->Send() or !$mail2->Send()) {
 echo "Error al enviar: " . $mail->ErrorInfo;
@@ -122,7 +122,7 @@ echo '<!DOCTYPE html>
             <div class="card-body">
               <h5 class="card-title">Mensaje enviado</h5>
               <p class="card-text">Tu mensaje fue enviado, nos estaremos poniendo en contacto contigo pronto!</p>
-              <a href="index.html" class="btn btn-success">Volver atras</a>
+              <a href="https://marcelonj.github.io/smartfuntionaltraining/" class="btn btn-success">Volver atras</a>
             </div>
           </div>
     </div>
