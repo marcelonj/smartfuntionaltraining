@@ -47,7 +47,7 @@
                               <a class="nav-link" href="#planes">Planes</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Contacto</a>
+                              <a class="nav-link" href="#contacto">Contacto</a>
                             </li>
                           </ul>
                         </div>
@@ -160,7 +160,7 @@
             <div class="col-12 col-md-4 mt-5">
               <div class="card text-center" style="width: 18rem; height: 100%;">
                 <div id="no-disponible">
-                  <p>Proximamente</p>
+                  <p>AGOTADO</p>
                 </div>
                 <img src="./assets/images/presencial.jpg" class="card-img-top" alt="plan presencial">
                 <div class="card-body">
@@ -193,9 +193,42 @@
               </div>
             </div>
           </div>
-
-          
         </section>
+
+        <!-- Formulario de contacto -->
+        <div id="contacto" class="container-fluid p-5 bg-blanco">
+          <div class="row text-center">
+            <div class="col-12 mb-5">
+              <h2 class="subrayado-azul" style="display: inline-block;">Ponte en contacto con nosotros</h2>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="container">
+              <form class="mb-3" method="post" action="mail_sender.php" id="formulario">
+                <label for="mail" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="mail" name="mail" placeholder="nombre@ejemplo.com" required>
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                <label for="seleccion" class="form-label">Plan a consultar</label>
+                <select class="form-select" aria-label="Default select example" name="seleccion" id="seleccion" required>
+                  <option selected>Seleccione el tipo de consulta</option>
+                  <option value="1">Plan online</option>
+                  <option value="2">Plan híbrido</option>
+                  <option value="3">Plan presencial</option>
+                  <option value="4">Coaching ontológico</option>
+                  <option value="5">Coaching deportivo</option>
+                  <option value="0">Otros</option>
+                </select>
+                <p class="d-none" id="texto-rojo">Selecione una opción</p>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Dejenos su mensaje...(opcional)"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success mb-3">Enviar consulta</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
         <!-- Boton whatsapp -->
         <div class="whatsapp">

@@ -104,6 +104,7 @@ article img {
 	height: 20rem;
 	border-radius: 50%;
 }
+
 .row h2 {
 	display: inline-block;
 	padding-bottom: 0.2rem;
@@ -149,12 +150,31 @@ article img {
 	height: 8rem;
 }
 
+/* Formulario de contacto */
+#contacto {
+	min-height: 100vh;
+}
+
+#texto-rojo {
+	color: rgb(175, 0, 0);
+	font-weight: 500;
+}
+
+form {
+	padding: 0 20%;
+}
+
+label {
+	padding: 0.5rem 0;
+}
+
 /* Boton whatsapp */
 .whatsapp {
 	position: fixed;
 	height: 4rem;
 	bottom: 2rem;
 	right: 2rem;
+	z-index: 5;
 }
 
 .whatsapp img {
@@ -184,6 +204,9 @@ article img {
 
 	}
 	
+	form {
+		padding: 0%;
+	}
 
 	/* Boton whatsapp */
 	.whatsapp {
