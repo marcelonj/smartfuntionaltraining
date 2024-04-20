@@ -169,9 +169,11 @@ label {
 	padding: 0.5rem 0;
 }
 
-.ocultar{
-	opacity: 0;
+.label-opciones{
+	padding: 0 1rem 0 0.3rem;
 }
+
+
 
 /* Footer */
 footer {

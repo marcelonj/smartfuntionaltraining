@@ -47,21 +47,9 @@ boton_entrenamiento_si.addEventListener("change", ()=>{
     }
 })
 
-boton_entrenamiento_no.addEventListener("change", ()=>{
-    if (boton_entrenamiento_no.checked){
-        opciones_entrenamiento.classList.add('d-none');
-    }
-})
-
 boton_asesorias_si.addEventListener("change", ()=>{
     if (boton_asesorias_si.checked){
         opciones_asesorias.classList.remove('d-none');
-    }
-})
-
-boton_asesorias_no.addEventListener("change", ()=>{
-    if (boton_asesorias_no.checked){
-        opciones_asesorias.classList.add('d-none');
     }
 })
 
@@ -71,9 +59,28 @@ boton_coaching_si.addEventListener("change", ()=>{
     }
 })
 
+boton_entrenamiento_no.addEventListener("change", ()=>{
+    if (boton_entrenamiento_no.checked){
+        opciones_entrenamiento.classList.add('d-none');
+        document.getElementById('masa_muscular').checked = false
+        document.getElementById('perder_grasa').checked = false
+    }
+})
+
+boton_asesorias_no.addEventListener("change", ()=>{
+    if (boton_asesorias_no.checked){
+        opciones_asesorias.classList.add('d-none');
+        document.getElementById('asesorias_1').checked = false
+        document.getElementById('asesorias_2').checked = false
+        document.getElementById('asesorias_4').checked = false
+    }
+})
+
 boton_coaching_no.addEventListener("change", ()=>{
     if (boton_coaching_no.checked){
         opciones_coaching.classList.add('d-none');
+        document.getElementById('coaching_ontologico').checked = false
+        document.getElementById('coaching_deportivo').checked = false
     }
 })
 
