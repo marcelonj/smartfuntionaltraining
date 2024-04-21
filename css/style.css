@@ -169,6 +169,21 @@ label {
 	padding: 0.5rem 0;
 }
 
+.label-opciones{
+	padding: 0 1rem 0 0.3rem;
+}
+
+.contenedor-opciones {
+	margin: 0 0 1rem;
+	border: solid 2px var(--celeste);
+	border-radius: 15px;
+	z-index: 0;
+}
+
+#pregunta {
+	margin-top: 1.2rem;
+}
+
 /* Footer */
 footer {
 	background-color: var(--gris-oscuro);
